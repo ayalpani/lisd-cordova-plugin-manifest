@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="com-lisd-cordova-plugin-manifest" version="0.0.1" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.androcordov.com/apk/res/android">
+    <name>lisd cordova plugin manifest</name>
+
+  <!-- android -->
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="*/*" />
+            </intent-filter>
+        </config-file>
+        <framework src="com.android.support:support-v4:+" />
+    </platform>
+
+</plugin>
