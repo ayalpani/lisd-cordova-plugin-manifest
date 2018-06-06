@@ -11,13 +11,13 @@
                 <data android:mimeType="*/*" />
             </intent-filter>
         </config-file>
-
+        <!--
         <config-file target="AndroidManifest.xml" platform="android" parent="/*">
             <uses-permission android:name="android.permission.CAMERA" />
             <uses-feature android:name="android.hardware.camera" />
             <uses-feature android:name="android.hardware.camera.autofocus" />
         </config-file>
-
+        -->
         <framework src="com.android.support:support-v4:+" />
     </platform>
 
