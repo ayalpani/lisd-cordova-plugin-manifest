@@ -3,7 +3,10 @@
     <name>lisd cordova plugin manifest</name>
 
   <!-- android -->
-    <platform name="android">
+    <platform name="android">       
+        <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
+            <activity android:name="MainActivity" android:windowSoftInputMode="adjustPan" />
+        </edit-config>
         <config-file target="AndroidManifest.xml" platform="android" parent="/manifest/application/activity" mode="merge">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
