@@ -11,10 +11,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
                 <data android:mimeType="*/*" />
             </intent-filter>            
+            <activity android:name="MainActivity" android:windowSoftInputMode="adjustPan" />
         </config-file>
         
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
-            <activity android:name="MainActivity" android:windowSoftInputMode="adjustPan" />
+            
         </edit-config>        
         <!--
         <config-file target="AndroidManifest.xml" platform="android" parent="/*">
