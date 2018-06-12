@@ -12,9 +12,12 @@
                 <data android:mimeType="*/*" />
             </intent-filter>            
         </config-file>
+        <!-- conflicts with some other plugin. I am unsure which one, since meteor build tool names it "undefined". 
+             have to give this up now and proceed. Look into it later again. arash, June 12, 2018
         <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']">
             <activity android:name="MainActivity" android:windowSoftInputMode="adjustPan" />
-        </edit-config>        
+        </edit-config>
+        -->
         <!--
         <config-file target="AndroidManifest.xml" platform="android" parent="/*">
             <uses-permission android:name="android.permission.CAMERA" />
